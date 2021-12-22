@@ -13,10 +13,10 @@ function openModal(modalSelector, modalTimeID) {
 
 function closeModal(modalSelector) {
     const modal = document.querySelector(modalSelector);
-    // modal.classList.add('hide'); <- не надо
+    
     modal.classList.remove('modal-show');
-    document.body.style.overflow = 'scroll'; // <- тут надо сделать scroll вместо hidden чтобы страничка 
-    //опять скроллилась, после закрытия моадльного окна
+    document.body.style.overflow = 'scroll'; 
+    
 }
 
 function modal(triggerSelector, modalSelector, modalTimeID) {
